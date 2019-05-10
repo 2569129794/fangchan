@@ -2,6 +2,7 @@
     <div>
         <h3>用户名{{username}}</h3>
         <h3>名：{{data.name}}</h3>
+        
         <p>手机号：{{data.phone}}</p>
         <p>账号：{{data.usernumber}}</p>
     </div>
