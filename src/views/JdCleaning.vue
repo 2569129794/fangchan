@@ -14,23 +14,23 @@
   			</select>
   			<div class="bxlist">
   				<dl>
-  					<dt><img src="../assets/logo.png"/></dt>
+  					<dt><img src="../../static/images/shendubaojie.png"/></dt>
   					<dd>空调清洗</dd>
   				</dl>
   				<dl>
-  					<dt><img src="../assets/logo.png"/></dt>
+  					<dt><img src="../../static/images/richangbaojie.png"/></dt>
   					<dd>冰箱清洗</dd>
   				</dl>
   				<dl>
-  					<dt><img src="../assets/logo.png"/></dt>
+  					<dt><img src="../../static/images/weixiuyuan.png"/></dt>
   					<dd>油烟机清洗</dd>
   				</dl>
   				<dl>
-  					<dt><img src="../assets/logo.png"/></dt>
+  					<dt><img src="../../static/images/wohsibaojie.png"/></dt>
   					<dd>热水器清洗</dd>
   				</dl>
   				<dl>
-  					<dt><img src="../assets/logo.png"/></dt>
+  					<dt><img src="../../static/images/weixiuyuan.png"/></dt>
   					<dd>洗衣机清洗</dd>
   				</dl>
   			</div>

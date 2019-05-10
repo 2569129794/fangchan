@@ -5,7 +5,7 @@
 	</van-row>
      
      <van-row class="top" >
-  		<img  src="../assets/logo.png" />
+  		<img  src="../../static/images/kaihuang.png" />
 	</van-row>
 	
 	<van-row class="bj_header">
@@ -113,7 +113,7 @@
 				  		
 				  	</div>
 				  	<div class="gj_pic">
-				  		<img src="../assets/logo.png" />
+				  		<img src="../../static/images/richangbaojie.png" />
 				  		
 				  	</div>
 			  	</div>	
@@ -124,7 +124,7 @@
 				  		<span>全新毛巾</span>
 				  	</div>
 				  	<div class="gj_pic">
-				  		<img src="../assets/logo.png" />
+				  		<img src="../../static/images/weixiuyuan.png" />
 				  	</div>
 			  	</div>	
 			  </van-col>
@@ -139,7 +139,7 @@
 				  		
 				  	</div>
 				  	<div class="gj_pic">
-				  		<img src="../assets/logo.png" />
+				  		<img src="../../static/images/shendubaojie.png" />
 				  		
 				  	</div>
 			  	</div>	
@@ -150,7 +150,7 @@
 				  		<span>全新毛巾</span>
 				  	</div>
 				  	<div class="gj_pic">
-				  		<img src="../assets/logo.png" />
+				  		<img src="../../static/images/wohsibaojie.png" />
 				  	</div>
 			  	</div>	
 			  </van-col>
@@ -210,7 +210,7 @@ import Header from "@/components/Header";
 <style>
 .top img{
 	width: 100%;
-	height: 160px;
+	height: 260px;
 }
 .bj_header{
 	padding-bottom: 20px;

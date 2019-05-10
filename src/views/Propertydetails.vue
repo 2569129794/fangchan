@@ -3,7 +3,7 @@
         <Header :name="title"></Header>
         <router-view @toparent="tit"></router-view>
       	<van-row class="top">
-  			<img  src="../assets/logo.png" />
+  			<img  src="../../static/images/house.jpg" />
 		</van-row>
 		
 		<van-row class="main" >
@@ -203,5 +203,9 @@ export default {
 	height: 30px;
 	width: 25vw;
 	text-align: center;
+	border:1px solid #fff;
+	line-height: 30px;
+	background: orange;
 }
+
 </style>

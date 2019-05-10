@@ -36,8 +36,8 @@
                 <img src="" alt="">
             </router-link>
             <div class="right" tag="div">
-                <router-link to="/haiwai" tag="p">海外房产</router-link>
-                <router-link to="/guonei" tag="p">国内房产</router-link>
+                <router-link to="/overseas" tag="p">海外房产</router-link>
+                <router-link to="/domestic" tag="p">国内房产</router-link>
                 <router-link to="/kehu" tag="p">客户记录</router-link>
             </div>
         </div>

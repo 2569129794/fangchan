@@ -36,6 +36,9 @@
   					<dd>客户记录</dd>
   				</dl>
   			</div>
+  			
+		<router-link to="/propertydetails" tag="span">
+  			
   			<van-row class="v-boxs">
 			  <van-col span="12" class="v-box">
 			  	<p>北京11大新区组团新建设方案</p>
@@ -59,6 +62,8 @@
 			  </van-col>
 			  
 			</van-row>
+  			</router-link>
+			
   			
   			<h3>推荐楼盘</h3>
   			

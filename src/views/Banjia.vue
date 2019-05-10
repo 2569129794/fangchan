@@ -5,7 +5,7 @@
 		</van-row>
 		
 		<van-row class="top" >
-	  		<img  src="../assets/logo.png" />
+	  		<img  src="../../static/images/banjia.png" />
 		</van-row>
 		 
 		<van-row >
@@ -46,7 +46,7 @@ import Header from "@/components/Header";
 <style scoped>
 .top img{
 	width: 100%;
-	height: 120px;
+	height: 240px;
 	margin-top: 45px;
 }
 .bj_list{

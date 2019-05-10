@@ -5,7 +5,7 @@
 		</van-row>
 		
 		<van-row class="top" >
-	  		<img  src="../assets/logo.png" />
+	  		<img  src="../../static/images/weixiuyuan.png" />
 		</van-row>
 		
 		<van-row class="h2">
@@ -134,7 +134,7 @@ export default {
 <style scoped>
 .top img{
 	width: 100%;
-	height: 120px;
+	height: 260px;
 	margin-top: 45px;
 }
 .fwbox{

@@ -59,7 +59,7 @@
   			
 		<router-link to="/propertydetails" tag="span">
   			<van-row class="loupan">
-			  	<img src="../assets/logo.png"/>
+			  	<img src="../../static/images/house.jpg"/>
 			  	<p>恭和家园</p>
 			  	<span>均价52000元/平</span>
 			</van-row>
@@ -67,7 +67,7 @@
 			
 		<router-link to="/propertydetails" tag="span">
 			<van-row class="loupan">
-			  	<img src="../assets/logo.png" />
+			  	<img src="../../static/images/house2.jpg" />
 			  	<p>恭和家园</p>
 			  	<span>均价52000元/平</span>
 			</van-row>
@@ -75,7 +75,7 @@
 		
 		<router-link to="/propertydetails" tag="span">
 			<van-row class="loupan">
-			  	<img src="../assets/logo.png" />
+			  	<img src="../../static/images/house3.jpg" />
 			  	<p>恭和家园</p>
 			  	<span>均价52000元/平</span>
 			</van-row>

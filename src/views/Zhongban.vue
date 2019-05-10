@@ -2,7 +2,7 @@
 	<div class="out">
 		
 		<van-row class="bj_pic">
-	  		<img src="../assets/logo.png" />
+	  		<img src="../../static/images/banjia2.png" />
 		</van-row>
 		
 		<van-row >

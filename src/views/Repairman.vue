@@ -5,7 +5,7 @@
 	</van-row>
      
      <van-row class="top" >
-  		<img  src="../assets/logo.png" />
+  		<img  src="../../static/images/weixiuyuan.png" />
 	</van-row>
 	
 	<van-row class="bj_header">
@@ -206,9 +206,12 @@ import Header from "@/components/Header";
 </script>
 
 <style>
+	.top{
+		margin-top: 45px;
+	}
 .top img{
 	width: 100%;
-	height: 160px;
+	height: 260px;
 }
 .bj_header{
 	padding-bottom: 20px;
