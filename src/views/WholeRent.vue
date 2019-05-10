@@ -6,8 +6,15 @@
 
 <script>
 export default {
-  name:'WholeRent'
- 
+  name:'WholeRent',
+  data(){
+    return{
+      tit:"整租"
+    }
+  },
+  mounted(){
+    this.$emit("toparent",this.tit)
+  }
 }
 </script>
 

@@ -16,11 +16,13 @@
         placeholder="请输入密码"
     />
     </van-cell-group>
-    <van-button type="default" class="btn" @click="btn()">登录</van-button>
+    <van-button type="default" class="btn" @click="login({username:username,password:password})">登录</van-button>
   </div>
 </template>
 
 <script>
+import axios from "axios";
+import {mapActions} from "vuex";
 export default {
   name:'Login',
   data(){
@@ -30,9 +32,7 @@ export default {
       }
   },
   methods:{
-      btn(){
-         this.$router.push("/index"); 
-      }
+      ...mapActions(["login"])
   }
 }
 </script>

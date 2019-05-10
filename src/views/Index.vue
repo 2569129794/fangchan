@@ -4,7 +4,7 @@
       <Header :name="title"/>
     </header>
     <section>
-      <router-view @toparent="tit"></router-view>
+      <router-view @toparent="tit" :uid="this.uid"></router-view>
     </section>
     <footer>
       <Footer/>
@@ -19,7 +19,8 @@ export default {
   name:'Index',
   data(){
       return{
-        title:""
+        title:"",
+        uid:""
       }
   },
   components:{
@@ -30,6 +31,10 @@ export default {
     tit(msg){
         this.title=msg;
     }
+  },
+  mounted(){
+    console.log(this.$route.query.uid);
+    this.uid=this.$route.query.uid;
   }
 }
 </script>

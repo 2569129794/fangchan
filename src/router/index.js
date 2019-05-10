@@ -20,6 +20,7 @@ import Banjia from '@/views/Banjia'
 import Weixiu from '@/views/Weixiu'
 import Maimai from '@/views/Maimai'
 import Kehu from '@/views/Kehu'
+
 import Richangbaojie from '@/views/Richangbaojie'
 import Shendubaojie from '@/views/Shendubaojie'
 import Woshibaojie from '@/views/Woshibaojie'
@@ -43,7 +44,8 @@ import Worktable from '@/views/Worktable'
 import Recod from '@/views/Recod'
 
 
-
+import Detail from '@/views/detail'
+import Fukuan from '@/views/Fukuan'
 
 
 Vue.use(Router)
@@ -123,6 +125,16 @@ export default new Router({
           path: '/mansion',
           name: 'Mansion',
           component: Mansion
+        },
+        {
+          path: '/detail/:id',
+          name: 'Detail',
+          component: Detail
+        },
+        {
+          path: '/fukuan',
+          name: 'Fukuan',
+          component: Fukuan
         }
       ]
     },

@@ -5,7 +5,9 @@ import Vant from 'vant';
 import 'vant/lib/index.css';
 import App from './App'
 import router from './router'
+import store from './store'
 import 'lib-flexible'
+import "./mockInfo/data"
 
 
 Vue.use(Vant);
@@ -16,6 +18,7 @@ window.eventBus=new Vue()
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })

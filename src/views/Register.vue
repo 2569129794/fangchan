@@ -9,7 +9,12 @@
         clearable
         placeholder="请输入用户名/手机号/邮箱"
     />
-
+    <van-field
+        class="txt"
+        v-model="phone"
+        clearable
+        placeholder="请输入手机号"
+    />
     <van-field
         class="txt"
         v-model="password"
@@ -28,18 +33,47 @@
 </template>
 
 <script>
+import axios from "axios";
+import qs from "qs";
 export default {
   name:'Register',
   data(){
       return{
           username:"",
+          phone:"",
           password:"",
           qpassword:""
       }
   },
   methods:{
       btn(){
-         this.$router.push("/login"); 
+        //  this.$router.push("/login"); 
+        // http://39.105.73.76:8080/house-1.0/user/register.do
+        if(this.password==this.qpassword){
+            axios({
+                method:"post",
+                url:"http://39.105.73.76:8080/house-1.0/user/register.do",
+                // headers:{"contentType":"application/x-www-form-urlencoded"},
+                data:qs.stringify({
+                    password:this.username,
+                    phone:this.phone,
+                    usernumber:this.username
+                })
+            }).then((data)=>{
+                console.log(data.data);
+                if(data.data.code==1000){
+                    alert(data.data.msg);
+                    this.$router.push("/login"); 
+                }else if(data.data.code==0){
+                    alert(data.data.msg)
+                }else{
+                    alert("注册失败");
+                }
+            })
+        }else{
+            alert("密码与确认密码不一致");
+        }
+         
       }
   }
 }
