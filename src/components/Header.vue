@@ -5,6 +5,7 @@
     left-text="返回"
     right-text="按钮"
     left-arrow
+    fixed
     @click-left="onClickLeft"
     @click-right="onClickRight"
   />
@@ -22,7 +23,7 @@ export default {
   },
   methods: {
     onClickLeft() {
-      this.$router.go(-1);
+      this.$router.back();
     },
     onClickRight() {
       Toast('按钮');

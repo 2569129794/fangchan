@@ -20,8 +20,32 @@ import Banjia from '@/views/Banjia'
 import Weixiu from '@/views/Weixiu'
 import Maimai from '@/views/Maimai'
 import Haiwai from '@/views/Haiwai'
-import Guonei from '@/views/Guonei'
 import Kehu from '@/views/Kehu'
+import Richangbaojie from '@/views/Richangbaojie'
+import Shendubaojie from '@/views/Shendubaojie'
+import Woshibaojie from '@/views/Woshibaojie'
+import CleaningCard from '@/views/CleaningCard'
+import Cleaner from '@/views/Cleaner'
+import Repairman from '@/views/Repairman'
+import JdCleaning from '@/views/JdCleaning'
+import Wipeglass from '@/views/Wipeglass'
+import Khbj from '@/views/Khbj'
+import Xiaoban from '@/views/Xiaoban'
+import Zhongban from '@/views/Zhongban'
+import Daban from '@/views/Daban'
+import Jingban from '@/views/Jingban'
+import Qiyeban from '@/views/Qiyeban'
+import Domestic from '@/views/Domestic'
+import Propertydetails from '@/views/Propertydetails'
+import Rule from '@/views/Rule'
+import Overseas from '@/views/Overseas'
+import Addkehu from '@/views/Addkehu'
+import Worktable from '@/views/Worktable'
+import Recod from '@/views/Recod'
+
+
+
+
 
 Vue.use(Router)
 
@@ -107,45 +131,175 @@ export default new Router({
       path:"/fuwu",
       name:"Fuwu",
       component:Fuwu,
-      children:[
-        {
+//    children:[
+//      {
+//        path:"/baojie",
+//        name:"Baojie",
+//        component:Baojie
+//      },
+//      {
+//        path:"/banjia",
+//        name:"Banjia",
+//        component:Banjia
+//      },
+//      {
+//        path:"/weixiu",
+//        name:"Weixiu",
+//        component:Weixiu
+//      }
+//    ]
+    },
+    {
           path:"/baojie",
           name:"Baojie",
-          component:Baojie
-        },
-        {
-          path:"/banjia",
-          name:"Banjia",
-          component:Banjia
-        },
-        {
+          component:Baojie,
+     },  
+      {
           path:"/weixiu",
           name:"Weixiu",
-          component:Weixiu
-        }
+          component:Weixiu,
+     },
+    {
+      path:'/richangbaojie',
+      name:'Richangbaojie',
+      component:Richangbaojie
+    },
+    {
+    	path:'/shendubaojie',
+    	name:'Shendubaojie',
+      component:Shendubaojie
+    },
+    {
+    	path:'/woshibaojie',
+    	name:'Woshibaojie',
+      component:Woshibaojie
+    },
+       
+    {
+    	path:'/cleaningcard',
+    	name:'CleaningCard',
+      component:CleaningCard  
+    }, 
+    
+     {
+    	path:'/cleaner',
+    	name:'Cleaner',
+      component:Cleaner  
+    },
+     {
+    	path:'/repairman',
+    	name:'Repairman',
+      component:Repairman  
+    },
+     {
+    	path:'/jdcleaning',
+    	name:'JdCleaning',
+      component:JdCleaning  
+    },
+    
+    {
+    	path:'/wipeglass',
+    	name:'Wipeglass',
+      component:Wipeglass  
+    },
+    {
+    	path:'/khbj',
+    	name:'Khbj',
+      component:Khbj  
+    },
+    {
+    	path:'/banjia',
+    	name:'Banjia',
+      component:Banjia,
+      redirect:"/xiaoban",
+      children:[
+      			{
+				    	path:'/xiaoban',
+				    	name:'Xiaoban',
+				      component:Xiaoban  
+				    },
+				    {
+				    	path:'/zhongban',
+				    	name:'Zhongban',
+				      component:Zhongban  
+				    },
+				    {
+				    	path:'/jingban',
+				    	name:'Jingban',
+				      component:Jingban  
+				    },
+				    {
+				    	path:'/qiyeban',
+				    	name:'Qiyeban',
+				      component:Qiyeban  
+				    },
+				    {
+				    	path:'/daban',
+				    	name:'Daban',
+				      component:Daban  
+				    },
       ]
     },
+    
+    
     {
       path:"/maimai",
       name:"Maimai",
-      component:Maimai,
-      children:[
+      component:Maimai
+      /*children:[
         {
           path:"/haiwai",
           name:"Haiwai",
           component:Haiwai
         },
         {
-          path:"/guonei",
-          name:"Guonei",
-          component:Guonei
+          path:"/domestic",
+          name:"Domestic",
+          component:Domestic
         },
         {
           path:"/kehu",
           name:"Kehu",
           component:Kehu
         }
-      ]
-    }
+      ]*/
+    },
+        {
+          path:"/domestic",
+          name:"Domestic",
+          component:Domestic
+        },
+        
+        {
+          path:"/overseas",
+          name:"Overseas",
+          component:Overseas
+        }
+        ,{
+        	path:"/propertydetails",
+          name:"Propertydetails",
+          component:Propertydetails
+        },
+        {
+        	path:"/rule",
+          name:"Rule",
+          component:Rule
+        },
+         {
+        	path:"/addkehu",
+          name:"Addkehu",
+          component:Addkehu
+        },
+        {
+        	path:"/worktable",
+          name:"Worktable",
+          component:Worktable
+        },{
+        	path:"/recod",
+          name:"Recod",
+          component:Recod
+        }
+        
+        
   ]
 })

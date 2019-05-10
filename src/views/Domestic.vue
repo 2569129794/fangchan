@@ -15,105 +15,82 @@
 				  	
 				</van-row>
 				
-				<div class="bxlist">
-			<router-link to="/domestic" tag="span">
-					
-  				<dl>
-  					<dt><img src="../../static/images/house.jpg"/></dt>
-  					<dd>国内房产</dd>
-  				</dl>
-  			</router-link>
+				
+				<van-row type="flex" justify="space-around" class="select">
+				  <van-col span="4">
+				  	<select name="">
+				  		<option value="区域">区域</option>
+				  		<option value="区域">北上广</option>
+				  		<option value="区域">京津唐</option>
+				  		<option value="区域">黄淮海</option>
+				  		<option value="区域">北上广</option>
+				  	</select>
+				  </van-col>
+				  <van-col span="4">
+				  	<select name="">
+				  		<option value="区域">单价</option>
+				  		<option value="区域">五万以下</option>
+				  		<option value="区域">五万到十万</option>
+				  		<option value="区域">十万到二十万</option>
+				  		<option value="区域">二十万以上</option>
+				  	</select>
+				  </van-col>
+				  <van-col span="4">
+				  	<select name="">
+				  		<option value="区域">面积</option>
+				  		<option value="区域">三四十平</option>
+				  		<option value="区域">百平以下</option>
+				  		<option value="区域">一百五十平左右</option>
+				  		<option value="区域">二百平以上</option>
+				  	</select>
+				  </van-col>
+				  <van-col span="4">
+				  	<select name="">
+				  		<option value="区域">更多</option>
+				  		<option value="区域">北上广</option>
+				  		<option value="区域">京津唐</option>
+				  		<option value="区域">黄淮海</option>
+				  		<option value="区域">北上广</option>
+				  	</select>
+				  </van-col>
+				</van-row>
   			
-			<router-link to="/overseas" tag="span">
-  			
-  				<dl>
-  					<dt><img src="../../static/images/house3.jpg"/></dt>
-  					<dd>海外房产</dd>
-  				</dl>
-  				</router-link>
-  				<dl>
-  					<dt><img src="../../static/images/house4.jpg"/></dt>
-  					<dd>客户记录</dd>
-  				</dl>
-  			</div>
-  			<van-row class="v-boxs">
-			  <van-col span="12" class="v-box">
-			  	<p>北京11大新区组团新建设方案</p>
-			  	<img src="../../static/images/house.jpg" />
-			  </van-col>
-			  <van-col span="12" class="v-box">
-			  	<p>北京11大新区组团新建设方案</p>
-			  	<img src="../../static/images/house3.jpg" />
-			  </van-col>
-			  
-			</van-row>
-			
-			<van-row class="v-boxs">
-			  <van-col span="12" class="v-box">
-			  	<p>北京11大新区组团新建设方案</p>
-			  	<img src="../../static/images/house2.jpg" />
-			  </van-col>
-			  <van-col span="12" class="v-box">
-			  	<p>北京11大新区组团新建设方案</p>
-			  	<img src="../../static/images/house4.jpg" />
-			  </van-col>
-			  
-			</van-row>
-  			
-  			<h3>推荐楼盘</h3>
+  			<h3>共有20个楼盘搜索</h3>
   			
 		<router-link to="/propertydetails" tag="span">
   			<van-row class="loupan">
-			  	<img src="../../static/images/house.jpg" />
+			  	<img src="../assets/logo.png"/>
 			  	<p>恭和家园</p>
 			  	<span>均价52000元/平</span>
 			</van-row>
-			</router-link>
-			
+		</router-link>
 			
 		<router-link to="/propertydetails" tag="span">
-			
 			<van-row class="loupan">
-			  
-			  	<img src="../../static/images/house2.jpg" />
+			  	<img src="../assets/logo.png" />
 			  	<p>恭和家园</p>
 			  	<span>均价52000元/平</span>
-			  
 			</van-row>
-			</router-link>
-			
+		</router-link>
+		
 		<router-link to="/propertydetails" tag="span">
-			
 			<van-row class="loupan">
-			  
-			  	<img src="../../static/images/house4.jpg" />
+			  	<img src="../assets/logo.png" />
 			  	<p>恭和家园</p>
 			  	<span>均价52000元/平</span>
-			  
 			</van-row>
-			</router-link>
+		</router-link>
 			
     </div>
 </template>
 <script>
-import axios from 'axios'
 import Header from "@/components/Header";
 export default {
-    name:"Maimai",
+    name:"Domestic",
     data(){
         return{
-            title:"买卖"
+            title:"国内房产"
         }
-    },
-    mounted(){
-    	
-    	/*	axios({
-					url:'http://www.baidu.com/api'
-				}).then((data)=>{
-					console.log(data.data)
-				})*/
-    		
-    	
     },
     components:{
         Header
@@ -170,44 +147,21 @@ display: flex;
 	float:left;
 	border: none;
 }
-.bxlist{
-	display: flex;
-	justify-content: space-around;
-	margin: 20px 0;
-}
-.bxlist dd{
-	font-size: 16px;
-	color: #101010;
-	margin-top: 5px;
-	margin-left:0 ;
-}
-.bxlist dt{
+.select{
+	margin: 30px 0px 10px 0px;
 	
-	margin-left:10px ;
 }
-.bxlist img{
-	width: 40px;
+.select select{
+	width: 70px;
 	height: 30px;
+	border-radius: 4px;
 }
-.v-boxs{
-	padding: 0 20px;
-}
-.v-box {
-	border: 1px solid #ccc;
-	padding: 10px 0;
-	
-}
-.v-box p{
-	float: left;
-	width: 94px;
-	padding: 0 10px;
-}
-.v-box img{
-	float: left;
-	width: 50px;
-	height: 37px;
-}
+
+
+
 h3{
+	font-size: 10px;
+	color: #888;
 	margin: 20px 0 10px 20px;
 }
 .loupan{

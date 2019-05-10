@@ -7,6 +7,7 @@ import App from './App'
 import router from './router'
 import 'lib-flexible'
 
+
 Vue.use(Vant);
 Vue.config.productionTip = false
 
