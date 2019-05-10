@@ -1,7 +1,12 @@
 <template>
   <div class="bigbox">
-    <Header :name="title"/>
-    <router-view></router-view>
+    <header>
+      <Header :name="title"/>
+    </header>
+    <section>
+      <router-view @toparent="tit"></router-view>
+    </section>
+    
   </div>
 </template>
 
@@ -11,7 +16,12 @@ export default {
   name:'Tenancy',
   data(){
     return{
-      title:"租房"
+      title:""
+    }
+  },
+  methods:{
+    tit(msg){
+      this.title=msg;
     }
   },
   components:{
@@ -21,5 +31,13 @@ export default {
 </script>
 
 <style scoped>
+.bigbox{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+}
 
+section{
+  overflow:auto;
+}
 </style>

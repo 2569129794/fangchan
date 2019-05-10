@@ -22,6 +22,8 @@ import Maimai from '@/views/Maimai'
 import Haiwai from '@/views/Haiwai'
 import Guonei from '@/views/Guonei'
 import Kehu from '@/views/Kehu'
+import Detail from '@/views/detail'
+import Fukuan from '@/views/Fukuan'
 
 Vue.use(Router)
 
@@ -100,6 +102,16 @@ export default new Router({
           path: '/mansion',
           name: 'Mansion',
           component: Mansion
+        },
+        {
+          path: '/detail/:id',
+          name: 'Detail',
+          component: Detail
+        },
+        {
+          path: '/fukuan',
+          name: 'Fukuan',
+          component: Fukuan
         }
       ]
     },
